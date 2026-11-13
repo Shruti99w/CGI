@@ -1,0 +1,17 @@
+[project]
+name = "agentic-ai-labs"
+version = "0.1.0"
+description = "Hands-on labs: From Prompts to Agents, and Reliable Prompting & Structured Outputs"
+requires-python = ">=3.10"
+dependencies = [
+    "openai>=1.40",
+    "pydantic>=2.7",
+    "python-dotenv>=1.0",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
